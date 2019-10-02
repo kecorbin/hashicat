@@ -1,6 +1,6 @@
 ##############################################################################
 # Variables File
-# 
+#
 # Here is where we store the default values for all the variables used in our
 # Terraform code. If you create a variable with no default, the user will be
 # prompted to enter it (or define it via config file or command line flags.)
@@ -41,7 +41,7 @@ variable "image_offer" {
 
 variable "image_sku" {
   description = "Image SKU to apply (az vm image list)"
-  default     = "16.04-LTS"
+  default     = "18.04-LTS"
 }
 
 variable "image_version" {
