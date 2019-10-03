@@ -1,5 +1,5 @@
 module "web_app_container" {
-  source              = "app.terraform.io/kecorbin/web-app-container/azurerm"
+  source              = "app.terraform.io/kcorbin/web-app-container/azurerm"
   name                = "${var.prefix}"
   port                = "80"
   https_only          = "false"
