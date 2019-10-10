@@ -3,7 +3,7 @@ module "web_app_container" {
   name                = "${var.prefix}"
   port                = "80"
   https_only          = "false"
-  resource_group_name = "${azurerm_resource_group.myresourcegroup.name}"
+  resource_group_name = azurerm_resource_group.myresourcegroup.name
   container_type      = "docker"
   container_image     = "scarolan/palacearcade"
 }
