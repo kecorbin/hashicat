@@ -7,6 +7,3 @@ module "web_app_container" {
   container_type      = "docker"
   container_image     = "scarolan/palacearcade"
 }
-output "container_app_url" {
-  value = "http://${module.web_app_container.hostname}"
-}
